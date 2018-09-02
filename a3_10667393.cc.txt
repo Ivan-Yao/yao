@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"Input your score  ";
+	cin>>a;
+	if(a>79 and a<101)
+	cout<<"A";
+	else if(a>74 and a<80)
+	cout<<"B+";
+	else if(a>69 and a<75)
+	cout<<"B";
+	else if(a>64 and a<70)
+	cout<<"C+";
+	else if(a>59 and a<65)
+	cout<<"C";
+	else if(a>54 and a<60)
+	cout<<"D+";
+	else if(a>49 and a<55)
+	cout<<"D";
+	else if(a>44 and a<50)
+	cout<<"E";
+	else if(a>=0 and a<45)
+	cout<<"F";
+	else
+	cout<<"Input your correct score";
+	return 0;
+}
