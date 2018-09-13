@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+ 
+int gcd(int a,int b)
+{
+    if((a>=b)&&((a%b)==0))
+        return(b);
+    else
+        gcd(b,(a%b));
+}
+ 
+int main()
+{
+    int a,b,result;
+    cout<<"Input the fist number:";
+    cin>>a;
+    cout<<"Input the second number:";
+    cin>>b;
+    result=gcd(a,b);
+    cout<<"The Greatest Common Divisor of "<<a<<" and "<<b<<" is "<<result;
+ 
+    return 0;
+}
